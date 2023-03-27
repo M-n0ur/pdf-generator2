@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+  print-color-adjust: exact;
+  --webkit-print-color-adjust: exact  !important; 
+}
 
 html,
 body {
@@ -56,7 +59,7 @@ body {
 
 .table-grid{
   display: grid;
-  width: fit-content;
+  /* width: fit-content; */
   grid-template-columns: auto;
   gap: 20px;
   margin: 0px auto;
